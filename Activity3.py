@@ -1,0 +1,10 @@
+x=5
+y="Vedanth"
+z=12.5
+w=False
+print(x)
+print(y)
+print(z)
+print(w)
+print(type(x))
+print(type(w))
