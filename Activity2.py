@@ -1,0 +1,5 @@
+print("Hello, World!")
+print("This is my 2nd class activity.")
+print("Hello Python \n")
+print("Hello", 5)
+print("welcome to", end="*")
