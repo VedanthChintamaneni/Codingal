@@ -1,0 +1,8 @@
+print("My daily routine:")
+print("1. Wake up at 7:00 AM")
+print("2. Read a book for 30 minutes")
+print("3. Have breakfast")
+print("4. Go to school")
+print("5. After school, I play video games with my friends for an hour.")
+study=int(input("How many hours do you study daily? ")) 
+print("You study for", study * 7, "hours every week.")

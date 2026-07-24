@@ -1,3 +1,7 @@
-import keyword
-print("Python keywords are:")
-print(keyword.kwlist)
+a=int (input("Enter value of a: "))
+b=int (input("Enter value of b: "))
+temp=a
+a=b
+b=temp
+print(a)
+print(b)
