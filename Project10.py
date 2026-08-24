@@ -1,3 +1,8 @@
 def circle_circumference(radius):
     return 2 * 3.14 * radius
-print(circle_circumference(5))
+
+user_radius = float(input("Enter the radius of the circle: "))
+
+result = circle_circumference(user_radius)
+
+print("The circumference is:", result)
