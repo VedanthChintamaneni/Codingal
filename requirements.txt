@@ -1,0 +1,25 @@
+import requests
+
+def getPokemondata():
+    pokemonName = str(input("[Write 'Exit' to leave program] Enter pokemon name: "))
+    if pokemonName == "Exit":
+        quit()
+    stat_url = "https://pokeapi.co/api/v2/pokemon/"+pokemonName
+    lore_url = "https://pokeapi.co/api/v2/pokemon-species/"+pokemonName
+    stat_response = requests.get(stat_url)
+    lore_response = requests.get(lore_url)
+    if stat_response.status_code == 200 and lore_response.status_code == 200:
+        Sdata = stat_response.json()
+        Ldata = lore_response.json()
+        print(f"Name: {Sdata['name']}")
+        print(f"Type: {Sdata['types'][0]['type']['name']}")
+        description = Ldata['flavor_text_entries'][0]['flavor_text']
+        description = description.replace('\n',' ')
+        description = description.replace('\f', ' ')
+        print(f'Description: {description}')
+    else:
+        print("Error")
+    return pokemonName
+
+while True:
+    getPokemondata()
