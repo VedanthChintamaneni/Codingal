@@ -12,3 +12,8 @@ print(f"Trigonometric values for {angle_in_degrees}°:")
 print(f"Sine:   {round(sin_value, 4)}")
 print(f"Cosine: {round(cosine_value, 4)}")
 print(f"Tangent:{round(tangent_value, 4)}")
+
+
+
+
+# I did search up how to do this
