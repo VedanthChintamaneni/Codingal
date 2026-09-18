@@ -1,6 +1,6 @@
 import turtle
 board= turtle.Screen()
-board.bgcolor("red")
+board.bgcolor("light blue")
 board.title("Turtle")
 my_pen= turtle.Turtle()
 size = 0
